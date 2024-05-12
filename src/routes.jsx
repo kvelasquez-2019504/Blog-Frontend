@@ -1,7 +1,6 @@
-import App from './App';
-
+import { Dashboard } from './assets/pages/dashboard/';
 const routes = [ 
-    {path:"/*", element: <App />} 
+    {path:"/*", element: <Dashboard />}
 ];
 
 export default routes;
