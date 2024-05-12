@@ -1,8 +1,14 @@
-import { Navbar } from "../../../components/Navbars/Navbar"
+import { Navbar } from "../../../components/Navbars/Navbar";
+import './dashboard.css';
 export const Dashboard = () => {
   return (
     <div>
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        
+      </div>
     </div>
   )
 }
