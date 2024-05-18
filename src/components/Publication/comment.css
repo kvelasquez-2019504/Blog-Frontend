@@ -1,0 +1,97 @@
+.comment{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #035147;
+}
+
+.card-comment{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 100%;
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-header input{
+    background-color: white;
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 1%;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.options a{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: yellow;
+    border: solid 1px white;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(242, 255, 4, 0.9);
+}
+
+.options a:hover{
+    font-weight: bold;
+}
+
+.options a:active{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: yellow;
+    border: solid 1px white;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(242, 255, 4, 0.2);
+}
+
+@media screen and (max-width: 445px){
+    .comment{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #035147;
+    }
+    .card-comment{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .card-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-header input{
+        background-color: white;
+        color: black;
+        padding: 1%;
+    }
+    .options{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+}

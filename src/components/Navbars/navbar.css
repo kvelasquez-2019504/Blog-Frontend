@@ -1,17 +1,10 @@
-.nav {
+nav {
     border-bottom: 1px solid #e9ecef;
     padding: 0% 2% 0% 2%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    --span1: scale(1);
-    --span2: skyblue;
-}
-
-.nav:has( .dropdown:target){
-    --span1:red;
-    --span2: rgb(78, 17, 177);
-    --clip: inset(0 0 0 0);
+    align-items: center;    
+    background-color: #1bf1;
 }
 
 ul{
@@ -49,43 +42,6 @@ li {
 ul li img{
     width: 50px;
     height: 50px;
-}
-
-.nav__menu{ 
-    position: relative;
-    z-index: 10;
-    color:var(--span1,rgb(99, 99, 8));
-    transform: var(--span1);
-}
-
-.nav__menu--second{
-    color: var(--span2,rgb(98, 98, 167));
-    transition: var(--span2);
-}
-
-.dropdown{
-    position: absolute;
-    background-color: rgb(41, 34, 34);
-    width: 15%;
-    height: 29%;
-    right: 0;
-    top:8.5%;
-    bottom: 0;
-    padding: 1em;
-    display: grid;
-    align-content: center;
-    gap:1rem;
-    overflow-y: auto;
-}
-
-.dropdown__link{
-    color: white;
-    padding: 0.4em .7em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap:0.6em;
-    position: relative;
 }
 
 @media screen and (max-width: 545px) {

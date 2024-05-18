@@ -1,0 +1,21 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.alert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.527);
+    color: rgb(211, 3, 3);
+    font:bold 14px Arial, sans-serif;
+    border-radius: 5px;
+}
+
+.lbl{
+    font:bold 15px Arial, sans-serif;
+}
