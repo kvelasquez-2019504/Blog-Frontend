@@ -1,7 +1,7 @@
 import axios from "axios";
 //npm run dev -- --host 0.0.0.0 sirve para exponer el servidor en la red local
 const apiClient = axios.create({
-    baseURL: 'http://127.0.0.1:3000/Blog/v1',
+    baseURL: 'https://blog-backend-git-master-kenneths-projects-f2cc3263.vercel.app/Blog/v1',
     timeout: 1000,
 });
 
