@@ -14,12 +14,12 @@ export const useLogin = () => {
 	const login = async (user, password) => {
 		setIsLoading(true);
 		const response = await loginRequest({ user, password });
-		setIsLoading(false);
 		if (response.error) {
 			return toast.error(
-				response.e?.response.e?.data || "ocurrio un error al iniciar sesion"
+				response.e?.response?.data || "ocurrio un error al iniciar sesion"
 			);
 		}
+		setIsLoading(false);
 		const { userDetails } = response.data;
 
 		localStorage.setItem("user", JSON.stringify(userDetails));
